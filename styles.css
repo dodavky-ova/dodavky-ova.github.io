@@ -9,17 +9,19 @@ body {
     color: red;
 }
 
-div.mycontainer {
+.mycontainer {
     width:100%;
     overflow:auto;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 30% 30% 30%;
+    align-items: center;
 }
 
-div.mycontainer div {
+.mycontainer div {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
+    
 }
 
 .navbar{
@@ -35,13 +37,13 @@ div.mycontainer div {
 }
 
 .navbar nav{
-    padding: 30px;
+    padding: 3px;
     text-align: left;
 }
 
 .navbar a{
     color: #ffffff;
-    padding-top: 30px;
+    padding-top: 33px;
     padding-bottom: 33px;
     padding-left: 15px;
     padding-right: 15px;
@@ -50,7 +52,7 @@ div.mycontainer div {
     border-width: 1px;
 }
 
-.navbar a:hover{
+.navbar nav a:hover{
     background-color: rgb(53, 53, 53);
 }
 
