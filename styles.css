@@ -1,0 +1,21 @@
+body {
+    background-color: lightblue;
+}
+
+.text1{
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+}
+
+div.mycontainer {
+    width:100%;
+    overflow:auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+div.mycontainer div {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
