@@ -23,39 +23,34 @@ div.mycontainer div {
 }
 
 .navbar{
-    background-color: rgb(127, 125, 247);
+    background-color: #474747;
     position: sticky;
     height: 90px;
-    
-
 }
+
 .navbar img{
     width: 90px;
     height: auto;
     float: left;
-
 }
 
 .navbar nav{
     padding: 30px;
-    text-align: center;
+    text-align: left;
 }
 
 .navbar a{
     color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
+    padding-top: 30px;
+    padding-bottom: 33px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-decoration: none;
     font-size: 25px;
+    border-width: 1px;
 }
 
-.navbar:hover {
-    color: black;
-}
-
-
-.navbar a.active {
-    background-color: #04AA6D;
-    color: white;
+.navbar a:hover{
+    background-color: rgb(53, 53, 53);
 }
 
