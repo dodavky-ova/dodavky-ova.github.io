@@ -2,7 +2,7 @@
 
 body {
     background-color: black;
-    background-image: url(images/backgroundindex.png);
+    background-image: url(images/backgroundindexgradient.png);
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -10,6 +10,10 @@ body {
     font-weight: 500;
     font-style: normal;
 }
+
+#image {
+    transition: opacity 0.5s ease-in-out;
+  }
 
 .text1{
     font-family: 'Courier New', Courier, monospace;
@@ -24,11 +28,47 @@ body {
     font-size: 30px;
 }
 
+
 .mycontainer div {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
     border-radius: 10px;
+}
+
+.mycontainer table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.mylink{
+    color: #0cc0df;
+}
+
+.mylink:hover{
+    color:white;
+}
+
+table ,th ,td {
+    border: 2px solid #474747;
+    border-collapse: collapse;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+th, td{
+    background-color: white;
+}
+
+.mycontainer img{
+    height: 314;
+    width: auto;
+    padding-top: 2px;
+    padding-left: 20px;
 }
 
 .navbar{
@@ -43,6 +83,8 @@ body {
     float: left;
 }
 
+
+
 .navbar nav{
     padding: -1px;
     text-align: left;
@@ -51,7 +93,7 @@ body {
 .navbar a{
     color: #ffffff;
     padding-top: 33px;
-    padding-bottom: 25px;
+    padding-bottom: 28px;
     padding-left: 15px;
     padding-right: 15px;
     text-decoration: none;

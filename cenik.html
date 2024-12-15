@@ -1,0 +1,98 @@
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!--zde se nastavuje ikona webu-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Rentworld</title> <!--zde je title stránky-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+
+<script>
+    var images = ["images/scriptcenik/pic1.jpeg", "images/scriptcenik/pic2.jpeg", "images/scriptcenik/pic3.jpeg", "images/scriptcenik/pic4.jpeg", "images/scriptcenik/pic5.jpeg"];
+    var index = 0;
+
+    window.onload = function() {
+    var imageElement = document.getElementById("image");
+
+    function changeImage() {
+        imageElement.style.opacity = 0;
+        setTimeout(function() {
+        index = (index + 1) % images.length; // cycle through images
+        imageElement.src = images[index];
+        imageElement.style.opacity = 1;
+        }, 500); // wait for fade-out to complete
+    }
+
+    // Set the interval to call changeImage every 4 seconds (4000 milliseconds)
+    setInterval(changeImage, 6000);
+}
+</script>
+
+</head>
+
+<!---->
+
+<body>
+
+    <div class="navbar">
+        
+        <a href="index.html">
+            <img src="images/logo.png" alt="">
+        </a>
+        <nav>
+            <a href="cenik.html"><strong>Ceník</strong></a>
+            <a href="dodavky.html"><strong>Dodávky</strong></a>
+            <a href="kontakt.html"><strong>Kontakt</strong></a>
+        </nav>
+    </div>
+ 
+
+
+
+    <h1 style="text-align: center; font-size: 70px; color: white;">Náš ceník</h1>
+
+    
+    <div class="mycontainer" style="grid-template-columns: 98%">
+        <div style="background-color: #474747;">
+            <h3 style="color: white">Peugeot Boxer</h3>
+
+            <div style="display: inline-flex">
+                <table>
+                    <tr>
+                      <th>Doba zapůjčení</th>
+                      <th>Cena</th>
+                      <th>Denní nájezd</th>
+    
+                    </tr>
+                    <tr>
+                        <td>1 až 4 dny</td>
+                        <td>1300kč/den<br> s DPH</td>
+                        <td rowspan="3">300km/den + 3kč za <br>každý nadlimitní<br> kilometr navíc</td>
+    
+                    </tr>
+                    <tr>
+                        <td>5 až 10 dní</td>
+                        <td>1100 kč/den<br> s DPH</td>
+                    </tr>
+                    <tr>
+                        <td>11 a více<br> dní</td>
+                        <td>Individuálně</td>
+                    </tr>
+                </table>
+    
+                <a href="Dodavky.html">
+                    <img id="image" src="images/scriptcenik/pic1.jpeg" alt="Image">
+                </a>
+                
+            </div>
+            
+            
+        </div>
+    </div>
+    
+
+
+</body>
+</html>
