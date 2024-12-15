@@ -1,7 +1,14 @@
+
+
 body {
-    background-color: lightblue;
+    background-color: black;
+    background-image: url(images/backgroundindex.png);
+    background-size: cover;
     margin: 0;
     padding: 0;
+    font-family: "Goldman", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .text1{
@@ -10,18 +17,18 @@ body {
 }
 
 .mycontainer {
-    width:100%;
-    overflow:auto;
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    font-size: 30px;
 }
 
 .mycontainer div {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
-    
+    border-radius: 10px;
 }
 
 .navbar{
@@ -37,14 +44,14 @@ body {
 }
 
 .navbar nav{
-    padding: 3px;
+    padding: -1px;
     text-align: left;
 }
 
 .navbar a{
     color: #ffffff;
     padding-top: 33px;
-    padding-bottom: 33px;
+    padding-bottom: 25px;
     padding-left: 15px;
     padding-right: 15px;
     text-decoration: none;
