@@ -8,26 +8,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script>
-    var images = ["images/scriptcenik/pic1.jpeg", "images/scriptcenik/pic2.jpeg", "images/scriptcenik/pic3.jpeg", "images/scriptcenik/pic4.jpeg", "images/scriptcenik/pic5.jpeg"];
-    var index = 0;
-
-    window.onload = function() {
-    var imageElement = document.getElementById("image");
-
-    function changeImage() {
-        imageElement.style.opacity = 0;
-        setTimeout(function() {
-        index = (index + 1) % images.length; // cycle through images
-        imageElement.src = images[index];
-        imageElement.style.opacity = 1;
-        }, 500); // wait for fade-out to complete
-    }
-
-    // Set the interval to call changeImage every 4 seconds (4000 milliseconds)
-    setInterval(changeImage, 6000);
-}
+    $(document).ready(function(){
+  // Add a click event listener to the image element
+  $("img").click(function(){
+    // Create a new container element
+    var fullscreenContainer = $("<div>");
+    fullscreenContainer.css({
+      "position": "fixed",
+      "z-index": "10000",
+      "top": "0",
+      "left": "0",
+      "width": "100%",
+      "height": "100%",
+      "background-color": "rgba(0, 0, 0, 0.5)",
+      "text-align": "center"
+    });
+    // Create a new image element
+    var fullscreenImage = $("<img>");
+    fullscreenImage.attr("src", $(this).attr("src"));
+    fullscreenImage.css({
+        "max-width": "90%", // Set the max width to 90% of the viewport
+      "max-height": "90%", // Set the max height to 90% of the viewport
+      "width": "auto", // Set the width to auto to maintain the aspect ratio
+      "height": "auto", // Set the height to auto to maintain the aspect ratio
+      "margin": "auto", // Center the image vertically and horizontally
+      "position": "absolute",
+      "top": "0",
+      "left": "0",
+      "bottom": "0",
+      "right": "0",
+      "cursor": "zoom-out"
+    });
+    // Create a close button
+    var closeButton = $("<button>");
+    closeButton.text("X");
+    closeButton.css({
+      "position": "absolute",
+      "top": "10px",
+      "right": "10px",
+      "background-color": "white",
+      "border": "none",
+      "font-size": "35px",
+      "cursor": "pointer"
+    });
+    // Add the close button event listener
+    closeButton.click(function(){
+      fullscreenContainer.remove();
+    });
+    // Add the image and close button to the container
+    fullscreenContainer.append(fullscreenImage);
+    fullscreenContainer.append(closeButton);
+    // Add the container to the body
+    fullscreenContainer.appendTo("body");
+  });
+});
 </script>
 </head>
 
@@ -50,7 +87,7 @@
 
 
 
-    <h1 style="text-align: center; font-size: 70px; color: white;">Dodávky</h1>
+    <h1 style="text-align: center; color: white;">Dodávky</h1>
 
     
     <div class="mycontainer" style="grid-template-columns: 80%">

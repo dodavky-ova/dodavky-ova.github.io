@@ -15,6 +15,14 @@ body {
     position: relative;
 }
 
+h1{
+    font-size: 70px;
+}
+
+h2{
+    font-size: 30;
+}
+
 #image {
     transition: opacity 0.5s ease-in-out;
 }
@@ -38,6 +46,7 @@ body {
     padding-right: 10px;
     text-align: center;
     border-radius: 10px;
+
 }
 
 .mycontainer table{
@@ -62,7 +71,9 @@ table ,th ,td {
     padding: 7px;
     padding-left: 20px;
     padding-right: 20px;
+
 }
+
 
 th, td{
     background-color: white;
@@ -99,7 +110,7 @@ th, td{
 .navbar a{
     color: #ffffff;
     padding-top: 33px;
-    padding-bottom: 28px;
+    padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
     text-decoration: none;
@@ -122,5 +133,76 @@ footer {
     color: #fff;
     padding: 0px;
     text-align: center;
+
+  }
+
+  @media screen and (max-width: 480px) {
+    .sidebar {
+      display: none;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    table ,th ,td {
+        border: 2px solid #474747;
+        border-collapse: collapse;
+        padding: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 12px;
+    }
+    
+    th, td{
+        background-color: white;
+    }
+
+    .navbar{
+        background-color: #474747;
+        position: sticky;
+        height: 60px;
+    }
+    
+    .navbar img{
+        width: 60px;
+        height: auto;
+        float: left;
+    }
+    
+    .navbar a{
+        color: #ffffff;
+        padding-top: 33px;
+        padding-bottom: 20px;
+        padding-left: 13px;
+        padding-right: 13px;
+        text-decoration: none;
+        font-size: 17px;
+        border-width: 1px;
+        text-align: center;
+    }
+
+    .mycontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        font-size: 15px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .mycontainer img{
+        height: 180;
+        width: auto;
+        padding-top: 2px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
 
   }
