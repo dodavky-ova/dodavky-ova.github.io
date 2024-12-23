@@ -26,7 +26,7 @@ body {
 
 .mycontainer {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 26% 26% 26%;
     justify-content: center;
     gap: 2%;
     font-size: 30px;
