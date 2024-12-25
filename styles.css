@@ -34,12 +34,46 @@ h2{
 
 .mycontainer {
     display: grid;
-    grid-template-columns: 26% 26% 26%;
+    grid-template-columns: 30% 30% 30%;
     justify-content: center;
     gap: 2%;
     font-size: 30px;
+
 }
 
+.mycontainernabidka{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 30px;
+    margin:10px;
+}
+
+
+.mycontainernabidka img{
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.mycontainernabidka p{
+    grid-column: 2;
+}
+
+.mycontainernabidka button{
+    font-family: "Goldman", sans-serif;
+    color: #ffffff;
+    background-color: #474747;
+    font-size: 27px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.mycontainernabidka button:hover{
+    background-color: rgb(53, 53, 53);
+}
 
 .mycontainer div {
     padding-left: 10px;
@@ -55,6 +89,15 @@ h2{
     margin-bottom: 40px;
     font-size: 30px;
     text-align: center;
+}
+.mycontainer button{
+    font-family: "Goldman", sans-serif;
+    color: #ffffff;
+    background-color: #474747;
+    font-size: 27px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 10px;
 }
 
 .mylink{
@@ -80,12 +123,13 @@ th, td{
 }
 
 .mycontainer img{
-    height: 314;
-    width: auto;
+    height: auto;
+    width: 300;
     padding-top: 2px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+
 }
 
 .navbar{
@@ -136,7 +180,42 @@ footer {
 
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1000px){
+    .mycontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        font-size: 28px;
+        margin-left: 0px;
+        margin-right: px;
+    }
+
+    .mycontainer img{
+        height: 180;
+        width: auto;
+        padding-top: 2px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .mycontainer table{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        font-size: 25px;
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    
+    iframe{
+        width: 300px;
+        height: 250px;
+    }
+
     .sidebar {
       display: none;
     }
@@ -191,18 +270,55 @@ footer {
         flex-direction: column;
         justify-content: center;
         gap: 20px;
-        font-size: 15px;
-        margin-left: 30px;
-        margin-right: 30px;
+        font-size: 20px;
+        margin-left: 0px;
+        margin-right: px;
     }
 
     .mycontainer img{
-        height: 180;
-        width: auto;
+        height: auto;
+        width: 300;
         padding-top: 2px;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
     }
+    
+    .mycontainer button{
+        font-family: "Goldman", sans-serif;
+        color: #ffffff;
+        background-color: #474747;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
+    .mycontainernabidka{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px;
+        font-size: 20px;
+    }
+    
+    .mycontainernabidka img{
+        height: auto;
+        width: 300;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .mycontainernabidka p{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+  }
+
+
+  @media screen and(max-width: 420px){
+    iframe{
+        width: 100px;
+        height: 250px;
+    }
   }

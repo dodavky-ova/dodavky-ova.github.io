@@ -1,0 +1,120 @@
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!--zde se nastavuje ikona webu-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Rentworld</title> <!--zde je title stránky-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+  // Add a click event listener to the image element
+  $("img").click(function(){
+    // Create a new container element
+    var fullscreenContainer = $("<div>");
+    fullscreenContainer.css({
+      "position": "fixed",
+      "z-index": "10000",
+      "top": "0",
+      "left": "0",
+      "width": "100%",
+      "height": "100%",
+      "background-color": "rgba(0, 0, 0, 0.5)",
+      "text-align": "center"
+    });
+    // Create a new image element
+    var fullscreenImage = $("<img>");
+    fullscreenImage.attr("src", $(this).attr("src"));
+    fullscreenImage.css({
+        "max-width": "90%", // Set the max width to 90% of the viewport
+      "max-height": "90%", // Set the max height to 90% of the viewport
+      "width": "auto", // Set the width to auto to maintain the aspect ratio
+      "height": "auto", // Set the height to auto to maintain the aspect ratio
+      "margin": "auto", // Center the image vertically and horizontally
+      "position": "absolute",
+      "top": "0",
+      "left": "0",
+      "bottom": "0",
+      "right": "0",
+      "cursor": "zoom-out"
+    });
+    // Create a close button
+    var closeButton = $("<button>");
+    closeButton.text("X");
+    closeButton.css({
+      "position": "absolute",
+      "top": "10px",
+      "right": "10px",
+      "background-color": "white",
+      "border": "none",
+      "font-size": "35px",
+      "cursor": "pointer"
+    });
+    // Add the close button event listener
+    closeButton.click(function(){
+      fullscreenContainer.remove();
+    });
+    // Add the image and close button to the container
+    fullscreenContainer.append(fullscreenImage);
+    fullscreenContainer.append(closeButton);
+    // Add the container to the body
+    fullscreenContainer.appendTo("body");
+  });
+});
+</script>
+</head>
+
+<!---->
+
+<body>
+
+    <div class="navbar">
+        
+        <a href="index.html">
+            <img src="images/logo.png" alt="">
+        </a>
+        <nav>
+            <a href="cenik.html"><strong>Ceník</strong></a>
+            <a href="dodavky.html"><strong>Dodávky</strong></a>
+            <a href="kontakt.html"><strong>Kontakt</strong></a>
+        </nav>
+    </div>
+ 
+
+
+
+    <h1 style="text-align: center; color: white;">Peugeot boxer 2021</h1>
+
+    
+    <div class="mycontainer" style="grid-template-columns: 100%">
+        <div style="background-color: #0cc0df">
+            <p style="text-align: left; margin: 15px;" >Parametry: 3 místa, diesel, 6-ti stupňová manuální převodovka, senzory pro parkování, rádio, bluetooth, klimatizace, topení  </p>
+            <p style="text-align: left; margin: 15px;">Počet vozidel: 2 <br><a href="cenik.html"><button>Ceník</button></a></p>
+            <img src="images/scriptcenik/pic1.jpeg" alt="">
+            <img src="images/scriptcenik/pic2.jpeg" alt="">
+            <img src="images/scriptcenik/pic3.jpeg" alt="">
+            <img src="images/pic7.jpeg" alt="">
+            <img src="images/scriptcenik/pic4.jpeg" alt="">
+            <img src="images/scriptcenik/pic5.jpeg" alt="">
+            <img src="images/pic9.jpeg" alt="">
+            <img src="images/scriptcenik/pic6.jpeg" alt="">
+            <img src="images/pic8.jpeg" alt="">
+            <p>Dostupnost vozidla</p>
+            <iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&ctz=Europe%2FPrague&showPrint=0&showTitle=0&showTz=0&hl=cs&src=ZTkzY2M3N2QwY2Y5MDA0ODc1MjA2ZTY1OGIwYWRiOTNkOTZmYzliNTkwMTA2ZDM0NGVmYmNlYmM4MDkwNDYxN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441" style="border:solid 1px #777; margin-bottom: 30px;" width="600" height="300" frameborder="0" scrolling="no"></iframe>
+            
+        </div>
+    </div>
+    
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <footer>
+        <p>&copy; 2024 Rentworld</p>
+      </footer>
+
+
+</body>
+</html>
