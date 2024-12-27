@@ -48,6 +48,7 @@ h2{
     gap: 30px;
     font-size: 30px;
     margin:10px;
+    border-radius: 10px;
 }
 
 
@@ -180,6 +181,8 @@ footer {
 
   }
 
+
+
   @media screen and (max-width: 1000px){
     .mycontainer {
         display: flex;
@@ -208,6 +211,8 @@ footer {
         text-align: center;
     }
   }
+
+  
 
   @media screen and (max-width: 600px) {
     
@@ -270,9 +275,9 @@ footer {
         flex-direction: column;
         justify-content: center;
         gap: 20px;
-        font-size: 20px;
+        font-size: 22px;
         margin-left: 0px;
-        margin-right: px;
+        margin-right: 0px;
     }
 
     .mycontainer img{
@@ -299,6 +304,7 @@ footer {
         grid-template-rows: 1fr;
         gap: 0px;
         font-size: 20px;
+
     }
     
     .mycontainernabidka img{
@@ -313,6 +319,7 @@ footer {
         grid-row: 2;
     }
 
+
   }
 
 
@@ -321,4 +328,11 @@ footer {
         width: 100px;
         height: 250px;
     }
+    .mycontainernabidka img{
+        height: auto;
+        width: 100;
+        grid-column: 1;
+        grid-row: 1;
+    }
   }
+
