@@ -67,9 +67,9 @@ h2{
     font-family: "Goldman", sans-serif;
     color: #ffffff;
     background-color: #474747;
-    font-size: 27px;
-    padding-left: 25px;
-    padding-right: 25px;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .mycontainernabidka button:hover{
@@ -95,9 +95,9 @@ h2{
     font-family: "Goldman", sans-serif;
     color: #ffffff;
     background-color: #474747;
-    font-size: 27px;
-    padding-left: 25px;
-    padding-right: 25px;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-top: 10px;
 }
 
@@ -239,7 +239,7 @@ footer {
         padding: 3px;
         padding-left: 5px;
         padding-right: 5px;
-        font-size: 12px;
+        font-size: 14px;
     }
     
     th, td{
@@ -288,15 +288,7 @@ footer {
         padding-right: 20px;
         padding-bottom: 20px;
     }
-    
-    .mycontainer button{
-        font-family: "Goldman", sans-serif;
-        color: #ffffff;
-        background-color: #474747;
-        font-size: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+
 
     .mycontainernabidka{
         display: grid;
@@ -304,6 +296,8 @@ footer {
         grid-template-rows: 1fr;
         gap: 0px;
         font-size: 20px;
+        margin: 0px;
+        margin-bottom: 20px;
 
     }
     
