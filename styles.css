@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: black;
+    background-color: white;
     background-image: url(images/backgroundindexgradient.png);
     background-size: cover;
     margin: 0;
@@ -17,10 +17,12 @@ body {
 
 h1{
     font-size: 70px;
+    color: white;
 }
 
 h2{
     font-size: 30;
+    color: white; 
 }
 
 #image {
@@ -102,7 +104,7 @@ h2{
 }
 
 .mylink{
-    color: #0cc0df;
+    color: rgb(57, 70, 255);
 }
 
 .mylink:hover{
