@@ -35,11 +35,21 @@ h2{
 }
 
 .mycontainer {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    justify-content: center;
-    gap: 2%;
+
+    justify-content: space-between;
+    gap: 30px;
     font-size: 30px;
+    margin:10px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+
+.mycontainer div {
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
 
 }
 
@@ -51,6 +61,7 @@ h2{
     font-size: 30px;
     margin:10px;
     border-radius: 10px;
+
 }
 
 
@@ -78,13 +89,6 @@ h2{
     background-color: rgb(53, 53, 53);
 }
 
-.mycontainer div {
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    border-radius: 10px;
-
-}
 
 .mycontainer table{
     margin-left: auto;
@@ -125,14 +129,16 @@ th, td{
     background-color: white;
 }
 
-.mycontainer img{
-    height: auto;
-    width: 300;
-    padding-top: 2px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
 
+
+.mycontainer img{
+    width: 400px;
+    height: auto;
+    padding: 20px;
+}
+
+.mycontainer p{
+    grid-column: 2;
 }
 
 .navbar{
@@ -193,16 +199,17 @@ footer {
         gap: 20px;
         font-size: 28px;
         margin-left: 0px;
-        margin-right: px;
+        margin-right: 0px;
     }
 
     .mycontainer img{
-        height: 180;
-        width: auto;
+        height: auto;
+        width: 200px;
         padding-top: 2px;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
+   
     }
 
     .mycontainer table{
@@ -212,6 +219,33 @@ footer {
         font-size: 25px;
         text-align: center;
     }
+
+    .mycontainernabidka{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px;
+        font-size: 30px;
+        margin: 0px;
+        margin-bottom: 20px;
+        padding: 0px;
+        align-items: center;
+
+    }
+    
+    .mycontainernabidka img{
+        height: auto;
+        width: 80%;
+        grid-column: 1;
+        grid-row: 1;
+        margin: auto;
+    }
+    
+    .mycontainernabidka p{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
   }
 
   
@@ -228,11 +262,11 @@ footer {
     }
 
     h1{
-        font-size: 30px;
+        font-size: 35px;
     }
 
     h2{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     table ,th ,td {
@@ -289,30 +323,15 @@ footer {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
+
     }
 
 
     .mycontainernabidka{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        gap: 0px;
-        font-size: 20px;
-        margin: 0px;
-        margin-bottom: 20px;
 
-    }
-    
-    .mycontainernabidka img{
-        height: auto;
-        width: 300;
-        grid-column: 1;
-        grid-row: 1;
-    }
-    
-    .mycontainernabidka p{
-        grid-column: 1;
-        grid-row: 2;
+        font-size: 20px;
+
+
     }
 
 
