@@ -9,24 +9,32 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+<script>
+     function toggleNavbar() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('show-nav-links');
+    }
+</script>
 </head>
 
 <!---->
 
 <body>
 
-    <div class="navbar">
-        
-        <a href="index.html">
-            <img src="images/logo.png" alt="">
-        </a>
-        <nav>
-            <a href="index.html"><strong>O nás</strong></a>
-            <a href="dodavky.html"><strong>Dodávky</strong></a>
-            <a href="kontakt.html"><strong>Kontakt</strong></a>
-        </nav>
+  <nav class="navbar">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Domů</a></li>
+      <li><a href="dodavky.html">Dodávky</a></li>
+      <li><a href="otazky.html">Časté otázky</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleNavbar()">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+  </nav>
  
 
 

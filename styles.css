@@ -21,7 +21,7 @@ h1{
 }
 
 h2{
-    font-size: 30;
+    font-size: 40;
     color: white; 
 }
 
@@ -35,21 +35,32 @@ h2{
 }
 
 .mycontainer {
-
     justify-content: space-between;
-    gap: 30px;
     font-size: 30px;
     margin:10px;
     border-radius: 10px;
-    text-align: center;
+
     align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 300px;
 }
 
+.mycontainer p{
+    padding:20px;
+    padding-bottom: 0px;
+}
 
-.mycontainer div {
-    padding: 30px;
+.mycontainer img{
+    width: auto;
+    height: 230px;
+    padding: 20px;
+    grid-column: 2;
+    object-fit: cover;
+}
+
+.mycontainer div{
     border-radius: 10px;
-    margin-bottom: 50px;
+    text-align: center;
 
 }
 
@@ -104,7 +115,6 @@ h2{
     font-size: 25px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 10px;
 }
 
 .mylink{
@@ -131,50 +141,6 @@ th, td{
 
 
 
-.mycontainer img{
-    width: 400px;
-    height: auto;
-    padding: 20px;
-}
-
-.mycontainer p{
-    grid-column: 2;
-}
-
-.navbar{
-    background-color: #474747;
-    position: sticky;
-    height: 90px;
-}
-
-.navbar img{
-    width: 90px;
-    height: auto;
-    float: left;
-}
-
-
-
-.navbar nav{
-    padding: -1px;
-    text-align: left;
-}
-
-.navbar a{
-    color: #ffffff;
-    padding-top: 33px;
-    padding-bottom: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-decoration: none;
-    font-size: 25px;
-    border-width: 1px;
-}
-
-.navbar nav a:hover{
-    background-color: rgb(53, 53, 53);
-}
-
 footer {
     position: absolute;
     bottom: 0;
@@ -189,6 +155,53 @@ footer {
 
   }
 
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    font-size: 23px;
+  
+  }
+  
+  .navbar img{
+      height: 90px;
+      width: auto;
+      margin: 0px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+    padding-right: 15px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
 
 
   @media screen and (max-width: 1000px){
@@ -200,6 +213,7 @@ footer {
         font-size: 28px;
         margin-left: 0px;
         margin-right: 0px;
+        padding: 0px;
     }
 
     .mycontainer img{
@@ -248,10 +262,58 @@ footer {
 
   }
 
+  @media screen and (max-width: 700px){
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+      }
+    
+      .nav-links li {
+        margin-right: 0;
+      }
+    
+      .nav-links a {
+        padding: 10px;
+        display: block;
+      }
+    
+      .hamburger {
+        display: block;
+        padding-right: 20px;
+      }
+    
+      .show-nav-links {
+        display: flex;
+        margin-top: 5px;
+        margin-left: -35px;
+        padding-bottom: 10px;
+      }
+      .navbar img{
+        height: 70px;
+        width: auto;
+        margin: 0px;
+    }
+    .mycontainer table{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 40px;
+        font-size: 30px;
+        text-align: center;
+    }
+  }
+
   
 
   @media screen and (max-width: 600px) {
     
+    
+
     iframe{
         width: 300px;
         height: 250px;
@@ -266,7 +328,7 @@ footer {
     }
 
     h2{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     table ,th ,td {
@@ -282,38 +344,16 @@ footer {
         background-color: white;
     }
 
-    .navbar{
-        background-color: #474747;
-        position: sticky;
-        height: 60px;
-    }
-    
-    .navbar img{
-        width: 60px;
-        height: auto;
-        float: left;
-    }
-    
-    .navbar a{
-        color: #ffffff;
-        padding-top: 33px;
-        padding-bottom: 20px;
-        padding-left: 13px;
-        padding-right: 13px;
-        text-decoration: none;
-        font-size: 17px;
-        border-width: 1px;
-        text-align: center;
-    }
-
+  
     .mycontainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 20px;
-        font-size: 22px;
+        font-size: 18px;
         margin-left: 0px;
         margin-right: 0px;
+        margin-bottom: 20px;
     }
 
     .mycontainer img{
@@ -328,12 +368,12 @@ footer {
 
 
     .mycontainernabidka{
-
-        font-size: 20px;
-
-
+        font-size: 18px;
     }
 
+    .mycontainer button{
+        font-size: 20px;
+    }
 
   }
 
@@ -351,3 +391,6 @@ footer {
     }
   }
 
+
+  
+  

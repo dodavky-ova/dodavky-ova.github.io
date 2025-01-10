@@ -8,23 +8,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+<script>
+       function toggleNavbar() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('show-nav-links');
+    }
+</script>
 </head>
 
 <!---->
 
 <body>
 
-    <div class="navbar">
-        
-        <a href="index.html">
-            <img src="images/logo.png" alt="">
-        </a>
-        <nav>
-            <a href="index.html"><strong>O nás</strong></a>
-            <a href="dodavky.html"><strong>Dodávky</strong></a>
-            <a href="kontakt.html"><strong>Kontakt</strong></a>
-        </nav>
-    </div>
+    <nav class="navbar">
+        <a href="index.html"><img src="images/logo.png"></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="dodavky.html">Dodávky</a></li>
+          <li><a href="otazky.html">Časté otázky</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleNavbar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
  
 
 
@@ -32,16 +41,19 @@
     <h1 style="text-align: center;">Kontakt</h1>
 
     
-    <div class="mycontainer" style= "grid-template-columns: 80%;">
-        <div style="background-color: #0cc0df;">
-            <h3>Kontakt</h3>
-            <p>Majitel: Vítězslav Kolář <br>
-                Mail: laveca@seznam.cz <br>
-                tel.: XXX XXX XXX</p>
-        </div>
+    <div class="mycontainer" style= "grid-template-columns: 1fr 1fr 1fr; background-color: #0cc0df; text-align: left;">
+      <p style="grid-column: 2">
+        Majitel: Vítězslav Kolář <br>
+        Mail: laveca@seznam.cz <br>
+        tel.: 777545497 <br>
+        Firma: votastav building s.r.o <br>
+        Sídlo: Jičínská 37 Ostrava-Výškovice 70030 <br><br>
+        IČ 04101090 <br>
+        DIČ  CZ 04101090
+      </p>
     </div>
     
-    <br><br><br><br><br>
+
     <footer>
     <p>&copy; 2024 Rentworld</p>
     </footer>

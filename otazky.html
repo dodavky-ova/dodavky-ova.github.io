@@ -1,120 +1,102 @@
-<html lang="en">
+<html lang="cz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!--zde se nastavuje ikona webu-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Rentworld</title> <!--zde je title stránky-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+
 <script>
-    function toggleNavbar() {
+    var images = ["images/scriptcenik/pic1.jpeg", "images/scriptcenik/pic2.jpeg", "images/scriptcenik/pic3.jpeg", "images/scriptcenik/pic4.jpeg", "images/scriptcenik/pic5.jpeg"];
+    var index = 0;
+
+    window.onload = function() {
+    var imageElement = document.getElementById("image");
+
+    function changeImage() {
+        imageElement.style.opacity = 0;
+        setTimeout(function() {
+        index = (index + 1) % images.length; // cycle through images
+        imageElement.src = images[index];
+        imageElement.style.opacity = 1;
+        }, 500); // wait for fade-out to complete
+    }
+
+    // Set the interval to call changeImage every 4 seconds (4000 milliseconds)
+    setInterval(changeImage, 6000);
+}
+
+function toggleNavbar() {
   const navLinks = document.querySelector('.nav-links');
   navLinks.classList.toggle('show-nav-links');
-}
+    }
 </script>
-<style>
-    /* Global Styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  font-family: Arial, sans-serif;
-}
+</head>
 
-/* Navbar Styles */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  color: #fff;
+<!---->
 
-}
-
-.navbar img{
-    width: 80px;
-    height: auto;
-    margin: 0px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-links li {
-  margin-right: 20px;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
-.hamburger span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin-bottom: 5px;
-}
-
-/* Responsive Styles */
-@media only screen and (max-width: 600px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 4rem;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-  }
-
-  .nav-links li {
-    margin-right: 0;
-  }
-
-  .nav-links a {
-    padding: 10px;
-    display: block;
-  }
-
-  .hamburger {
-    display: block;
-    padding-right: 20px;
-  }
-
-  .show-nav-links {
-    display: flex;
-    margin-top: 15px;
-  }
-
-  
-}
-</style>
 <body>
+
     <nav class="navbar">
-  <img src="images/logo.png">
-  <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-  <div class="hamburger" onclick="toggleNavbar()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="dodavky.html">Dodávky</a></li>
+          <li><a href="otazky.html">Časté otázky</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleNavbar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+ 
+
+
+
+    <h1 style="text-align: center;">Časté otázky</h1>
+
+    
+    <div class="mycontainer" style= "grid-template-columns: 15% 70% 15%; background-color: #0cc0df; text-align: left;">
+      <div style="grid-column: 2">
+        <h2>Jaké jsou podmínky pro zapůjčení vozu?</h2>
+        <p>Osoba která si od nás půjčuje vůz musí mít řidičský
+           průkaz skupiny B, a předložit doklad totožnosti. 
+        </p>
+        <p>
+          V 
+           případě zapůjčení vozu na firmu potřebuje aby byl 
+           předložen výpis z obchodního rejstříku, nebo živnostenský list.
+        </p>
+        <p>Pokud si od nás půjčíte vůz, tak předpokládáme že 
+          bude vrácen ve stejném stavu jako ve kterém byl zapůjčen,
+          a to včetně množství paliva, se kterým byl vůz předán.
+        </p>
+        <p>Vozidla jsou zapůjčena s limite nájezdu kilometrů. Pokud by 
+          byl limit překročen, bude účtována částka navíc podle ceníku 
+          jednotlivých dodávek.
+        </p>
+        <h2>Kde můžete dodávku vyzvednout?</h2>
+        <p>Vůz můžete vyzvednout na ulici ulici Skautská, Ostrava-Poruba.<p>
+        <h2>Kdy si můžete vůz vyzvednout?</h2>
+        <p>Vůz si lze můžete vyzvednout od 9 do 18 hodin, od pondělí do pátku.</p>
+        <h2>Může se v naších vozech kouřit?</h2>
+        <p>Všechny naše vozy jsou nekuřácké.</p>
+        <h2>Lze si nechat vůz dovézt a pak zase odvézt?</h2>
+        <p>Dohodou se dá zařídit dovoz a odvoz vozu z předem domluveného místa</p>
+        </div>
+    </div>
+    
+
+
+        <footer>
+          <p>&copy; 2024 Rentworld</p>
+        </footer>
+
 </body>
 </html>

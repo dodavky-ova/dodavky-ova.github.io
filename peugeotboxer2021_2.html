@@ -65,6 +65,11 @@
     fullscreenContainer.appendTo("body");
   });
 });
+
+function toggleNavbar() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('show-nav-links');
+    }
 </script>
 </head>
 
@@ -72,17 +77,20 @@
 
 <body>
 
-    <div class="navbar">
-        
-        <a href="index.html">
-            <img src="images/logo.png" alt="">
-        </a>
-        <nav>
-            <a href="index.html"><strong>O nás</strong></a>
-            <a href="dodavky.html"><strong>Dodávky</strong></a>
-            <a href="kontakt.html"><strong>Kontakt</strong></a>
-        </nav>
+  <nav class="navbar">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Domů</a></li>
+      <li><a href="dodavky.html">Dodávky</a></li>
+      <li><a href="otazky.html">Časté otázky</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleNavbar()">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+  </nav>
  
 
 
@@ -90,13 +98,13 @@
     <h1 style="text-align: center; ">Peugeot boxer 2021</h1>
 
     
-    <div class="mycontainer" style="grid-template-columns: 99%">
+    <div class="mycontainer" style="grid-template-columns: 100%">
         <div style="background-color: #0cc0df">
             <p style="text-align: left; margin: 15px;" >Parametry: 3 místa, diesel, 6-ti stupňová manuální převodovka, senzory pro parkování, rádio, bluetooth, klimatizace, topení  </p>
             <p style="text-align: left; margin: 15px;"><a href="cenik.html"><button>Ceník</button></a></p>
-            <p>Dostupnost vozidla</p>
-            <iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&ctz=Europe%2FPrague&showPrint=0&showTitle=0&showTz=0&hl=cs&src=ZTkzY2M3N2QwY2Y5MDA0ODc1MjA2ZTY1OGIwYWRiOTNkOTZmYzliNTkwMTA2ZDM0NGVmYmNlYmM4MDkwNDYxN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441" style="border:solid 1px #777; margin-bottom: 30px;" width="600" height="300" frameborder="0" scrolling="no"></iframe>
-            <p>Fotogalerie</p>
+            <h2>Dostupnost vozidla</h2>
+            <iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&ctz=Europe%2FPrague&showPrint=0&showTitle=0&showTz=0&hl=cs&src=ZTkzY2M3N2QwY2Y5MDA0ODc1MjA2ZTY1OGIwYWRiOTNkOTZmYzliNTkwMTA2ZDM0NGVmYmNlYmM4MDkwNDYxN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441" style="border:solid 1px #777; margin-bottom: 30px;" width="80%" height="500" frameborder="0" scrolling="no"></iframe>
+            <h2>fotogalerie</h2>
             <img src="images/scriptcenik/pic1.jpeg" alt="">
             <img src="images/scriptcenik/pic2.jpeg" alt="">
             <img src="images/scriptcenik/pic3.jpeg" alt="">

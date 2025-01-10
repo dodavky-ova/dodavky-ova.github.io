@@ -28,6 +28,11 @@
     // Set the interval to call changeImage every 4 seconds (4000 milliseconds)
     setInterval(changeImage, 6000);
 }
+
+function toggleNavbar() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('show-nav-links');
+    }
 </script>
 
 </head>
@@ -36,17 +41,20 @@
 
 <body>
 
-    <div class="navbar">
-        
-        <a href="index.html">
-            <img src="images/logo.png" alt="">
-        </a>
-        <nav>
-            <a href="index.html"><strong>O nás</strong></a>
-            <a href="dodavky.html"><strong>Dodávky</strong></a>
-            <a href="kontakt.html"><strong>Kontakt</strong></a>
-        </nav>
-    </div>
+    <nav class="navbar">
+        <a href="index.html"><img src="images/logo.png"></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="dodavky.html">Dodávky</a></li>
+          <li><a href="otazky.html">Časté otázky</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleNavbar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
  
 
 
@@ -54,7 +62,7 @@
     <h1 style="text-align: center;">Náš ceník</h1>
 
     
-    <div class="mycontainer" style="grid-template-columns: 98%">
+    <div class="mycontainer" style="grid-template-columns: 100%">
         <div style="background-color: #474747;">
             <h3 style="color: white">Peugeot Boxer</h3>
             

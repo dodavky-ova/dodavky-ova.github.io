@@ -8,35 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+<script>
+     function toggleNavbar() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('show-nav-links');
+    }
+</script>
 </head>
 
 <!---->
 
 <body>
 
-    <div class="navbar">
-        
-        <a href="index.html">
-            <img src="images/logo.png" alt="">
-        </a>
-        <nav>
-            <a href="index.html"><strong>Časté otázky</strong></a>
-            <a href="dodavky.html"><strong>Dodávky</strong></a>
-            <a href="kontakt.html"><strong>Kontakt</strong></a>
-        </nav>
-    </div>
+    <nav class="navbar">
+        <a href="index.html"><img src="images/logo.png"></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="dodavky.html">Dodávky</a></li>
+          <li><a href="otazky.html">Časté otázky</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleNavbar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
  
 
 
 
     <h1 style="text-align: center;">Vítejte v rentworldu!</h1>
-    <h2 style="text-align: center;  padding-bottom: 15px;">Jsme Ostravská půjčovna dodávek</h2>
+    <h2 style="text-align: center;  padding-bottom: 15px;">Domovská stránka</h2>
 
 
 
     <div class="mycontainer" style="background-color: #0cc0df;" ;>
 
-        <p>Proč si půjčit právě u nás?</p>
+        <p>
+          Vítejte u nás! <br> 
+          Jsme Ostravská půjčovna vozů se zaměřením na dodávky. <br>
+          Věříme že u nás najdete vůz odpovídající vaším požadavkům
+        </p>
         <img src="images/vanicon1.png" alt="">
 
     </div>
