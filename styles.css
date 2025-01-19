@@ -1,8 +1,8 @@
 
 
 body {
-    background-color: white;
-    background-image: url(images/backgroundindexgradient.png);
+    background-color: #474747;
+
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -16,13 +16,19 @@ body {
 }
 
 h1{
-    font-size: 70px;
+    font-size: 60px;
     color: white;
 }
 
 h2{
-    font-size: 40;
+    font-size: 35;
     color: white; 
+    margin-bottom: 0px;
+    margin-top: 70px;
+}
+
+hr{
+    margin-top: 30px;
 }
 
 #image {
@@ -36,18 +42,21 @@ h2{
 
 .mycontainer {
     justify-content: space-between;
-    font-size: 30px;
-    margin:10px;
+    font-size: 22px;
+    margin:20px;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 10px;
-
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 300px;
+
 }
 
 .mycontainer p{
     padding:20px;
     padding-bottom: 0px;
+    margin-top: 0px;
 }
 
 .mycontainer img{
@@ -57,6 +66,7 @@ h2{
     grid-column: 2;
     object-fit: cover;
 }
+
 
 .mycontainer div{
     border-radius: 10px;
@@ -69,8 +79,10 @@ h2{
     grid-template-columns: 1fr 3fr;
     justify-content: space-between;
     gap: 30px;
-    font-size: 30px;
-    margin:10px;
+    font-size: 22px;
+    margin:20px;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 10px;
 
 }
@@ -91,7 +103,7 @@ h2{
     font-family: "Goldman", sans-serif;
     color: #ffffff;
     background-color: #474747;
-    font-size: 25px;
+    font-size: 22px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -105,14 +117,14 @@ h2{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
-    font-size: 30px;
+    font-size: 22px;
     text-align: center;
 }
 .mycontainer button{
     font-family: "Goldman", sans-serif;
     color: #ffffff;
     background-color: #474747;
-    font-size: 25px;
+    font-size: 22px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -125,18 +137,21 @@ h2{
     color:white;
 }
 
+
 table ,th ,td {
-    border: 2px solid #474747;
+    border: 2px solid #0cc0df;
     border-collapse: collapse;
     padding: 7px;
     padding-left: 20px;
     padding-right: 20px;
+    color: white;
+    
 
 }
 
 
 th, td{
-    background-color: white;
+    background-color: #474747;
 }
 
 
@@ -148,8 +163,8 @@ footer {
     right: 0;
     margin-top: auto;
     width: 100%;
-    background-color: #474747;
-    color: #fff;
+    background-color: #333;
+    color: white;
     padding: 0px;
     text-align: center;
 
@@ -162,12 +177,12 @@ footer {
     align-items: center;
     background-color: #333;
     color: #fff;
-    font-size: 23px;
-  
+    font-size: 20px;
+
   }
   
   .navbar img{
-      height: 90px;
+      height: 70px;
       width: auto;
       margin: 0px;
   }
@@ -206,16 +221,17 @@ footer {
 
   @media screen and (max-width: 1000px){
     .mycontainer {
-        display: flex;
+
         flex-direction: column;
         justify-content: center;
         gap: 20px;
-        font-size: 28px;
+        font-size: 20px;
         margin-left: 0px;
         margin-right: 0px;
         padding: 0px;
     }
 
+   
     .mycontainer img{
         height: auto;
         width: 200px;
@@ -239,7 +255,7 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         gap: 0px;
-        font-size: 30px;
+        font-size: 20px;
         margin: 0px;
         margin-bottom: 20px;
         padding: 0px;
@@ -303,7 +319,7 @@ footer {
         margin-left: 5px;
         margin-right: 5px;
         margin-bottom: 40px;
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
     }
   }
@@ -332,7 +348,6 @@ footer {
     }
 
     table ,th ,td {
-        border: 2px solid #474747;
         border-collapse: collapse;
         padding: 3px;
         padding-left: 5px;
@@ -340,9 +355,7 @@ footer {
         font-size: 14px;
     }
     
-    th, td{
-        background-color: white;
-    }
+
 
   
     .mycontainer {
@@ -371,9 +384,7 @@ footer {
         font-size: 18px;
     }
 
-    .mycontainer button{
-        font-size: 20px;
-    }
+
 
   }
 
