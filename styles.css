@@ -35,6 +35,8 @@ hr{
     transition: opacity 0.5s ease-in-out;
 }
 
+
+
 .text1{
     font-family: 'Courier New', Courier, monospace;
     color: red;
@@ -170,6 +172,11 @@ footer {
 
   }
 
+  iframe{
+    width: 80%;
+    height: 500px;
+}
+
   /* Navbar Styles */
   .navbar {
     display: flex;
@@ -182,9 +189,13 @@ footer {
   }
   
   .navbar img{
-      height: 70px;
-      width: auto;
-      margin: 0px;
+    height: 50px;
+    width: auto;
+    margin: 0px;
+    padding-bottom: 17px;
+    padding-left: 2px;
+    padding-top: 10px;
+    background-color: #0cc0df;
   }
   
   .nav-links {
@@ -276,6 +287,11 @@ footer {
         grid-row: 2;
     }
 
+    iframe{
+        width: 80%;
+        height: 300px;
+    }
+   
   }
 
   @media screen and (max-width: 700px){
@@ -306,14 +322,18 @@ footer {
     
       .show-nav-links {
         display: flex;
-        margin-top: 5px;
+        margin-top: 3px;
         margin-left: -35px;
         padding-bottom: 10px;
       }
       .navbar img{
-        height: 70px;
+        height: 40px;
         width: auto;
         margin: 0px;
+        padding-bottom: 17px;
+        padding-left: 6px;
+        padding-right: 2px;
+        padding-top: 10px;
     }
     .mycontainer table{
         margin-left: 5px;
