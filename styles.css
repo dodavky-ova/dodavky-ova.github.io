@@ -416,7 +416,7 @@ footer {
     }
     .mycontainernabidka img{
         height: auto;
-        width: 100;
+        width: 70%;
         grid-column: 1;
         grid-row: 1;
     }
