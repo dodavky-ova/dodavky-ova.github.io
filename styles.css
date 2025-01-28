@@ -375,7 +375,7 @@ footer {
 
   
     .mycontainer {
-
+        display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 20px;
@@ -383,6 +383,7 @@ footer {
         margin-left: 0px;
         margin-right: 0px;
         margin-bottom: 20px;
+        grid-template-columns: 1fr;
    
     }
 
@@ -393,6 +394,7 @@ footer {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
+        grid-column: 1;
 
     }
 
