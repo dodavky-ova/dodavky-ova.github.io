@@ -46,8 +46,8 @@ hr{
     justify-content: space-between;
     font-size: 22px;
     margin:20px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 12%;
+    margin-right: 12%;
     border-radius: 10px;
     align-items: center;
     display: grid;
@@ -83,8 +83,8 @@ hr{
     gap: 30px;
     font-size: 22px;
     margin:20px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 12%;
+    margin-right: 12%;
     border-radius: 10px;
 
 }
@@ -228,6 +228,18 @@ footer {
     margin-bottom: 5px;
   }
 
+  @media screen and (max-width: 1700px){
+    .mycontainer{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .mycontainernabidka{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+  }
+
 
   @media screen and (max-width: 1000px){
     .mycontainer {
@@ -276,6 +288,7 @@ footer {
     .mycontainernabidka img{
         height: auto;
         width: 80%;
+        max-width: 600px;
         grid-column: 1;
         grid-row: 1;
         margin: auto;
