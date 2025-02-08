@@ -357,7 +357,12 @@ footer {
 
   @media screen and (max-width: 600px) {
     
-    
+    #indexphoneimg{
+        width: 0px;
+        height: auto;
+        padding: 0px;
+        margin-top: -15px;
+    }
 
     iframe{
         width: 300px;
