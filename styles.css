@@ -104,14 +104,22 @@ hr{
 .mycontainernabidka button{
     font-family: "Goldman", sans-serif;
     color: #ffffff;
-    background-color: #474747;
-    font-size: 22px;
+    background-color: transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
     padding-left: 30px;
     padding-right: 30px;
+    transition: 0.5s;
+    outline: none;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 15px;
 }
 
 .mycontainernabidka button:hover{
-    background-color: rgb(53, 53, 53);
+    background-color: #2aaecf;
 }
 
 
@@ -125,11 +133,25 @@ hr{
 .mycontainer button{
     font-family: "Goldman", sans-serif;
     color: #ffffff;
-    background-color: #474747;
-    font-size: 22px;
+    background-color: transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
     padding-left: 30px;
     padding-right: 30px;
+    font-size: 25px;
+    transition: 0.5s;
+    outline: none;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 15px;
 }
+
+.mycontainer button:hover{
+    background-color: #2aaecf;
+}
+
 
 .mylink{
     color: rgb(57, 70, 255);
