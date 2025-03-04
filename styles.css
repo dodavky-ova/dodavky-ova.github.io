@@ -215,7 +215,8 @@ footer {
     width: auto;
     margin: 0px;
     padding-bottom: 17px;
-    padding-left: 2px;
+    padding-right: 2px;
+    padding-left: 3px;
     padding-top: 10px;
     background-color: #0cc0df;
   }
