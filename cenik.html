@@ -8,41 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
-
-<script>
-    var images = ["images/scriptcenik/pic1.jpeg", "images/scriptcenik/pic2.jpeg", "images/scriptcenik/pic3.jpeg", "images/scriptcenik/pic4.jpeg", "images/scriptcenik/pic5.jpeg"];
-    var index = 0;
-
-    window.onload = function() {
-    var imageElement = document.getElementById("image");
-
-    function changeImage() {
-        imageElement.style.opacity = 0;
-        setTimeout(function() {
-        index = (index + 1) % images.length; // cycle through images
-        imageElement.src = images[index];
-        imageElement.style.opacity = 1;
-        }, 500); // wait for fade-out to complete
-    }
-
-    // Set the interval to call changeImage every 4 seconds (4000 milliseconds)
-    setInterval(changeImage, 6000);
-}
-
-function toggleNavbar() {
-  const navLinks = document.querySelector('.nav-links');
-  navLinks.classList.toggle('show-nav-links');
-    }
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0W4RVJ3PE8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0W4RVJ3PE8');
-</script>
+<script src="js/script.js"></script>
 </head>
 
 <!---->

@@ -15,6 +15,7 @@ body {
     position: relative;
 }
 
+
 h1{
     font-size: 60px;
     color: white;
@@ -51,7 +52,7 @@ hr{
     border-radius: 10px;
     align-items: center;
     display: grid;
-    grid-template-columns: 1fr 300px;
+   
 
 }
 
@@ -67,6 +68,8 @@ hr{
     padding: 20px;
     grid-column: 2;
     object-fit: cover;
+    grid-template-columns: 1fr 300px;
+    cursor: pointer;
 }
 
 
@@ -116,6 +119,8 @@ hr{
     border-color: black;
     border-width: 2px;
     border-radius: 15px;
+    grid-template-columns: 1fr 300px;
+    cursor: pointer;
 }
 
 .mycontainernabidka button:hover{
@@ -146,6 +151,8 @@ hr{
     border-color: black;
     border-width: 2px;
     border-radius: 15px;
+    grid-template-columns: 1fr 300px;
+    cursor: pointer;
 }
 
 .mycontainer button:hover{
