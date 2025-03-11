@@ -56,7 +56,14 @@
         "font-size": "50px",
         "cursor": "pointer",
         "background": "transparent",
-        "color": "white"
+        "color": "white",
+        "background": "rgba(0, 0, 0, 0.5)",
+        "background-size": "cover",
+        "background-position": "center",
+        "border-radius": "50%",
+        "width": "60px",
+        "height": "60px"
+        
       });
 
       // Adjust the button position based on screen size (below 800px)
@@ -90,13 +97,13 @@
       prevButton.css({
         "position": "absolute",
         "top": "50%",
-        "left": "10px",
+        "left": "5px",
         "font-size": "70px",
         "color": "white",
         "background": "transparent",
         "border": "none",
         "cursor": "pointer",
-        "transform": "translateY(-50%)"
+        "transform": "translateY(-50%)",
       });
 
       var nextButton = $("<button>");
@@ -104,7 +111,7 @@
       nextButton.css({
         "position": "absolute",
         "top": "50%",
-        "right": "10px",
+        "right": "5px",
         "font-size": "70px",
         "color": "white",
         "background": "transparent",

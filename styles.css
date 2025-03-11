@@ -451,6 +451,20 @@ footer {
         font-size: 18px;
     }
 
+    .mycontainer button{
+        width: 100%;
+        text-align: center;
+        align-self: center;
+        padding-right: 30px;
+    }
+
+
+    .mycontainernabidka button{
+        width: 100%;
+        text-align: center;
+        align-self: center;
+        padding-right: 30px;
+    }
 
 
   }
