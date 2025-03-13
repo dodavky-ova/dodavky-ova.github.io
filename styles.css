@@ -100,6 +100,7 @@ hr{
     margin-right: 12%;
     border-radius: 10px;
 
+
 }
 
 
@@ -112,6 +113,7 @@ hr{
 
 .mycontainernabidka p{
     grid-column: 2;
+    padding-left: 10px;
 }
 
 .mycontainernabidka button{
@@ -254,6 +256,10 @@ footer {
     color: #fff;
     text-decoration: none;
   }
+
+  .nav-links a:hover{
+    color: #0cc0df;
+  }
   
   .hamburger {
     display: none;
@@ -334,6 +340,7 @@ footer {
         grid-column: 1;
         grid-row: 1;
         margin: auto;
+        width: 300px;
     }
     
     .mycontainernabidka p{
@@ -436,6 +443,8 @@ footer {
         text-align: center;
         padding-left: 0px;
         padding-right: 0px;
+
+
     }
   
     .mycontainer {
@@ -465,7 +474,6 @@ footer {
 
     .mycontainernabidka{
         font-size: 18px;
-
         text-align: center;
     }
 
@@ -483,11 +491,17 @@ footer {
         width: 100%;
         text-align: center;
         align-self: center;
-        
-
     }
 
+    .mycontainernabidka p{
+        margin: 15px;
+        padding-left: 0px;
+    }
 
+    .mycontainernabidka img{
+        width: 80%;
+        height: auto;
+    }
   }
 
 
