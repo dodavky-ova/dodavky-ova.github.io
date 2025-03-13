@@ -180,12 +180,3 @@
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('show-nav-links');
       }
-
-
-
-
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-0W4RVJ3PE8');
