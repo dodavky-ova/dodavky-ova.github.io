@@ -217,7 +217,27 @@ footer {
   iframe{
     width: 80%;
     height: 500px;
-}
+    }
+
+    .phonebar{
+        justify-content: space-between;
+        background-color: #ffffff;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .phonebar img{
+        height: 20px;
+        width: auto;   
+        padding-left: 3px;
+        padding-right: 10px;
+        margin-bottom: -4px;
+    }
+
+    .phonebar a:link{
+        color:#000000;
+    }
 
   /* Navbar Styles */
   .navbar {
