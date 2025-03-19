@@ -147,10 +147,8 @@ $(document).ready(function(){
     });
 
   });
-
-
-
 });
+
 
 function toggleNavbar() {
   const navLinks = document.querySelector('.nav-links');
