@@ -128,7 +128,7 @@ hr{
 
 .mycontainernabidka p{
     grid-column: 2;
-    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .mycontainernabidka button{
@@ -385,6 +385,8 @@ footer {
     .mycontainernabidka p{
         grid-column: 1;
         grid-row: 2;
+        padding-left: 10px;
+        padding-right: 0px;
     }
 
     iframe{
