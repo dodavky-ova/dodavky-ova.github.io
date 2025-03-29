@@ -118,20 +118,63 @@
         <p><strong>V případě zájmu</strong> o zapůjčení tohoto vozidla nás můžete kontaktovat <a href="kontakt.html">zde</a></p>
             <h2 style="padding-bottom: 20px">Dostupnost vozidla</h2>
             <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FPrague&showPrint=0&showTitle=0&showCalendars=0&src=Y19jY2I0YmZiM2MxYTYxMDg3MmJiMzgwNTljNTE4MGQyNDNlNDRjNmEyYmZjMzhiODAyMWM1NmE2ODE2NzI0ODUxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23F4511E" style="border-width:0" frameborder="0" scrolling="no"></iframe>
-            <h2>Fotogalerie</h2>
-            <img src="images/pic1peugeotboxer2021blue.jpeg" alt="">
-            <img src="images/pic2peugeotboxer2021blue.jpeg" alt="">
-            <img src="images/pic3peugeotboxer2021blue.jpeg" alt="">
-            <img src="images/pic7peugeotboxer2021blue.jpeg" alt="">
-            <img src="images/pic4peugeotboxer2021blue.jpeg" alt="">
-            <img src="images/pic5peugeotboxer2021blue.jpeg" alt="">
-            <img src="images/pic9peugeotboxer2021blue.jpeg" alt="">
-            <img src="images/pic6peugeotboxer2021blue.jpeg" alt="">
-            <img src="images/pic8peugeotboxer2021blue.jpeg" alt="">
-            
-            
+            <h2 style="padding-bottom: 20px;">Fotogalerie</h2>
         </div>
     </div>
+
+    <div class="carousel" id="carousel">
+      <button class="carousel-btn prev" onclick="moveSlide(-1)" id="prevBtn">&#10094;</button>
+      <div class="carousel-container">
+          <div class="carousel-slide" id="carouselSlide">
+              <img src="images/pic1peugeotboxer2021blue.jpeg" alt="Slide 1">
+              <img src="images/pic2peugeotboxer2021blue.jpeg" alt="Slide 2">
+              <img src="images/pic3peugeotboxer2021blue.jpeg" alt="Slide 3">
+              <img src="images/pic4peugeotboxer2021blue.jpeg" alt="Slide 4">
+              <img src="images/pic5peugeotboxer2021blue.jpeg" alt="Slide 5">
+              <img src="images/pic6peugeotboxer2021blue.jpeg" alt="Slide 6">
+              <img src="images/pic7peugeotboxer2021blue.jpeg" alt="Slide 7">
+              <img src="images/pic8peugeotboxer2021blue.jpeg" alt="Slide 8">
+              <img src="images/pic9peugeotboxer2021blue.jpeg" alt="Slide 9">
+          </div>
+      </div>
+      <button class="carousel-btn next" onclick="moveSlide(1)" id="nextBtn">&#10095;</button>
+      <button class="fullscreen-btn" onclick="toggleFullscreen()" id="fullscreenBtn">🔍</button>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".carousel-slide img");
+    const totalSlides = slides.length;
+    const carousel = document.getElementById("carousel");
+    const carouselSlide = document.getElementById("carouselSlide");
+    const fullscreenBtn = document.getElementById("fullscreenBtn");
+    
+    function moveSlide(step) {
+        currentIndex += step;
+        if (currentIndex < 0) {
+            currentIndex = totalSlides - 1;
+        } else if (currentIndex >= totalSlides) {
+            currentIndex = 0;
+        }
+        carouselSlide.style.transform = `translateX(${-currentIndex * 100}%)`;
+    }
+    
+    function toggleFullscreen() {
+        carousel.classList.toggle("fullscreen");
+        fullscreenBtn.textContent = carousel.classList.contains("fullscreen") ? "❌" : "🔍";
+    }
+    
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowRight") {
+            moveSlide(1);
+        } else if (event.key === "ArrowLeft") {
+            moveSlide(-1);
+        } else if (event.key === "Escape" && carousel.classList.contains("fullscreen")) {
+            toggleFullscreen();
+        }
+    });
+  
+    </script>
     
     <p style="padding-top: 400px;"></p>
      
