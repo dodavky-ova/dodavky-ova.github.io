@@ -242,15 +242,23 @@ footer {
     }
 
     .phonebar img{
-        height: 20px;
+        height: 23px;
         width: auto;   
         padding-left: 3px;
-        padding-right: 10px;
+        padding-right: 2px;
         margin-bottom: -4px;
+        margin-top: 2px;
     }
 
     .phonebar a:link{
         color:#000000;
+    }
+
+    #phonebarsplit{
+        font-size: 25px; 
+        color: black;
+        margin-left: 1%;
+        margin-right: 1%
     }
 
   /* Navbar Styles */
