@@ -444,6 +444,42 @@ footer {
   }
 
 
+  .accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .accordion-header {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    padding: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .accordion-header:hover {
+    background-color: #e2e2e2;
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  .accordion-content.open {
+    padding: 15px;
+  }
+
+
+
+
   @media screen and (max-width: 1000px){
     .mycontainer {
 

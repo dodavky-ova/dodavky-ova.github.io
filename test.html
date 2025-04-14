@@ -3,11 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Půjčovna dodávek Ostrava-Poruba | Pronájem od 600Kč/den</title> <!--zde je title stránky-->
-    <meta name="description" content="Hledáte dodávku v Ostravě-Porubě? Nabízíme pronájem již od 600 Kč/den. Spolehlivé dodávky, férové podmínky, rychlé vyřízení.">
-    <meta name="keywords" content="Ostrava, Poruba, Dodávky, půjčovna, levně, dodávka, ostrava-poruba">
-    <meta property="og:title" content="Půjčovna dodávek Ostrava-Poruba | Pronájem dodávek | od 600Kč/den">
-    <meta property="og:description" content="Půjčovna dodávek v Ostravě-Porubě | již od 600Kč/den">
+    <title>Půjčovna dodávek Ostrava Poruba | Pronájem od 600Kč/den</title> <!--zde je title stránky-->
+    <meta name="description" content="Zapůjčení dodávek pro celou Ostravu – výhodné cen od 600kč/den, rychlá domluva po telefonu. Provozovna v Porubě, rezervace ihned bez zbytečného papírování.">
+    <meta name="keywords" content="Ostrava, Poruba, Dodávky, půjčovna, levně, dodávka, ostrava, poruba">
+    <meta property="og:title" content="Půjčovna dodávek Ostrava Poruba | Pronájem dodávek | od 600Kč/den">
+    <meta property="og:description" content="Půjčovna dodávek v Ostravě Porubě | již od 600Kč/den">
     <meta property="og:image" content="images/logonove2">
     <meta property="og:url" content="https://dodavky-ova.cz">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,22 +84,69 @@
 
 
     <div class="mycontainer" style="background-color: #0cc0df;" ;>
-      <div class="mycontainer">
-        <p>
-          Potřebujete dodávku k pronájmu v Ostravě-Porubě? U nás si pronajmete kvalitní vozidla za ceny již od 600 Kč/den. Naše dodávky jsou ideální pro stěhování, přepravu zboží nebo firemní účely. V ceně pronájmu máte 300 km/den, což pokryje většinu vašich potřeb.
-        </p>
-        <img id="indexphoneimg" src="images/vanicon1.png" alt="">
+      <!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akordeon</title>
+
+</head>
+<body>
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">Sekce 1</div>
+      <div class="accordion-content">
+        <p>Obsah první sekce. Tady můžeš mít libovolný text nebo HTML.</p>
       </div>
-        <h3>Proč si vybrat naši půjčovnu dodávek?</h2>
-        <p>✔️ Ceny od 600 Kč/den – Transparentní ceník, žádné skryté poplatky. <br>
-          ✔️ 300 km/den v ceně – Kilometry navíc účtujeme za férový poplatek. <br>
-          ✔️ Domluva přes telefon – Půjčte si dodávku snadno telefonicky, bez složitého papírování. <br>
-          ✔️ Výborná poloha v Ostravě-Porubě – Pohodlný příjezd a parkování. <br><br>
-          
-          Naše dodávky jsou pravidelně servisované a připravené k okamžitému použití.<br> Ať už potřebujete dodávku na den či týden, jsme tu pro vás.<br>
-          
-          <a href="kontakt.html">Zavolejte nám</a> ještě dnes a rezervujte si dodávku podle vašich potřeb!</p>
-          <p  style="margin-bottom: 60px;">Všechny naše dodávky jsou k dispozici na vyzvednutí na adrese <a href="https://www.google.com/maps?ll=49.823202,18.177013&z=18&t=m&hl=cs&gl=CZ&mapclient=embed&q=49%C2%B049%2723.5%22N+18%C2%B010%2739.6%22E+49.823194,+18.177667@49.8231944,18.1776667">Skautská 62, 708 00 Ostrava 8</a></p>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Sekce 2</div>
+      <div class="accordion-content">
+        <p>Obsah druhé sekce. Klidně i obrázky nebo formulář.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Sekce 3</div>
+      <div class="accordion-content">
+        <p>Obsah třetí sekce. Všechno, co chceš.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const headers = document.querySelectorAll('.accordion-header');
+
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+
+        // Zavři všechny ostatní
+        document.querySelectorAll('.accordion-content').forEach(c => {
+          if (c !== content) {
+            c.style.maxHeight = null;
+            c.classList.remove('open');
+          }
+        });
+
+        // Otevři/zavři aktuální
+        if (content.classList.contains('open')) {
+          content.style.maxHeight = null;
+          content.classList.remove('open');
+        } else {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          content.classList.add('open');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
     </div>
 
 
@@ -161,7 +208,7 @@
       <p>
         Mail: laveca@seznam.cz <br>
         tel.: 774422321 <br>
-        Adresa pro vyzvednutí: Skautská 62, 708 00 Ostrava 8<br>
+        
         Firma: votastav building s.r.o <br>
         Sídlo: Jičínská 37 Ostrava-Výškovice 70030 <br><br>
         IČ 04101090 <br>
