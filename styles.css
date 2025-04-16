@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: #474747;
+    background-color: #0a0a0a;
 
     background-size: cover;
     margin: 0;
@@ -28,9 +28,7 @@ h2{
     margin-top: 70px;
 }
 
-hr{
-    margin-top: 30px;
-}
+
 
 #image {
     transition: opacity 0.5s ease-in-out;
@@ -52,6 +50,10 @@ hr{
     border-radius: 10px;
     align-items: center;
     display: grid;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #414141;
+    color: white;
    
 
 }
@@ -66,6 +68,16 @@ hr{
 #button1{
     text-align: left;
     font-weight: bold;
+    background-color: #0cc0df;
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #414141;
+
+}
+
+#button1:hover{
+    background-color: #11a0c4;
 }
 
 
@@ -110,7 +122,10 @@ hr{
     margin-left: 12%;
     margin-right: 12%;
     border-radius: 10px;
-    
+    border-style: solid;
+    border-width: 2px;
+    border-color: #414141;
+    color: white;
 
 
 }
@@ -120,8 +135,8 @@ hr{
     grid-column: 1;
     border-radius: 8px;
     width: auto; /* Nastavení šířky na 100% pro flexibilitu */
-    max-width: 450px; /* Nebo pevně nastav velikost */
-    max-height: 280px;
+    max-width: 400px; /* Nebo pevně nastav velikost */
+    max-height: auto;
     margin: 5px;
    
 }
@@ -161,6 +176,8 @@ hr{
     margin-bottom: 40px;
     font-size: 22px;
     text-align: center;
+    
+    
 }
 .mycontainer button{
     font-family: "Goldman", sans-serif;
@@ -197,19 +214,21 @@ hr{
 
 
 table ,th ,td {
-    border: 2px solid #0cc0df;
+    border: 1px solid white;
     border-collapse: collapse;
     padding: 7px;
     padding-left: 20px;
     padding-right: 20px;
     color: white;
     
+    
+    
 
 }
 
 
 th, td{
-    background-color: #474747;
+    background-color: #0a0a0a;
 }
 
 
@@ -221,12 +240,18 @@ footer {
     right: 0;
     margin-top: auto;
     width: 100%;
-    background-color: #333;
-    color: white;
+    background-color: #111111;
     padding: 0px;
     text-align: center;
-
+    
   }
+
+ footer p{
+    color: white;
+ }
+
+
+
 
   iframe{
     width: 80%;
@@ -266,9 +291,15 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     font-size: 20px;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: #414141;
+    color: white;
+
+
 
   }
   
@@ -584,9 +615,9 @@ footer {
     
       .show-nav-links {
         display: flex;
-        margin-top: 26px;
+        margin-top: 32px;
         margin-left: -35px;
-        padding-bottom: 10px;
+
       }
       .navbar img{
         height: 40px;
@@ -650,7 +681,7 @@ footer {
         text-align: center;
         padding-left: 0px;
         padding-right: 0px;
-
+        
 
     }
   
@@ -710,7 +741,7 @@ footer {
     }
 
     .mycontainernabidka img{
-        width: 80%;
+        width: 95%;
         height: auto;
     }
   }
