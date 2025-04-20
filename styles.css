@@ -89,6 +89,12 @@ h2{
     background-color: #11a0c4;
 }
 
+#pindex{
+    text-align: left;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
 
 .mycontainer img{
     border-radius: 8px;
@@ -518,6 +524,14 @@ footer {
   }
 
 
+  @media screen and (max-width: 1200px){
+
+    #pindex{
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+  }
+
 
 
   @media screen and (max-width: 1000px){
@@ -647,6 +661,11 @@ footer {
         padding: 4px;
     }
 
+    #pindex{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
   }
 
   
@@ -658,6 +677,10 @@ footer {
         height: auto;
         padding: 0px;
         margin-top: -15px;
+    }
+    #pindex{
+        margin-left: 5%;
+        margin-right: 2%;
     }
 
     iframe{
