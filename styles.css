@@ -37,7 +37,11 @@ h2{
 }
 
 #links{
-    color: purple;
+    color: #0cc0df;
+}
+
+#links:hover{
+    color: #0b91a8;
 }
 
 .text1{
