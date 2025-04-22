@@ -95,6 +95,12 @@ h2{
     margin-right: 18%;
 }
 
+#pindex2{
+    text-align: left;
+    margin-left: 22%;
+    margin-right: 18%;
+}
+
 
 .mycontainer img{
     border-radius: 8px;
@@ -530,6 +536,11 @@ footer {
         margin-left: 10%;
         margin-right: 5%;
     }
+
+    #pindex2{
+        margin-left: 15%;
+        margin-right: 5%;
+    }
   }
 
 
@@ -665,7 +676,12 @@ footer {
         margin-left: 5%;
         margin-right: 5%;
     }
+    #pindex2{
+        margin-left: 12%;
+        margin-right: 7%;
+    }
 
+    
   }
 
   
