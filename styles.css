@@ -568,7 +568,7 @@ footer {
         grid-row: 1;
         margin: auto;
         margin-top: 10px;
-   
+
     }
 
     .mycontainer table{
@@ -589,7 +589,7 @@ footer {
         margin-bottom: 20px;
         padding: 0px;
         align-items: center;
-
+        text-align: center;
     }
     
     .mycontainernabidka img{
