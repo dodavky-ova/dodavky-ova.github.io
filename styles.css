@@ -243,9 +243,8 @@ table ,th ,td {
     color: white;
     
     
-    
-
 }
+
 
 
 th, td{
@@ -586,10 +585,11 @@ footer {
         gap: 0px;
         font-size: 20px;
         margin: 0px;
-        margin-bottom: 20px;
+
         padding: 0px;
         align-items: center;
         text-align: center;
+        margin-top: 20px;
     }
     
     .mycontainernabidka img{
