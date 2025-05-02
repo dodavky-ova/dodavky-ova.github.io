@@ -80,43 +80,71 @@
 
     <h1 style="text-align: center;">testttttttttt</h1>
     <h2 style="text-align: center;  padding-bottom: 15px;">Domovská stránka</h2>
-    <a href="#cilova-sekce" class="scroll-button">Scroll dolů</a>
 
 
 
-    <div class="mycontainer" style="background-color: #0cc0df;" ;>
-      <!DOCTYPE html>
-<html lang="cs">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akordeon</title>
 
-</head>
+
+
 <body>
-
+<div class="mycontainer" style="justify-content: center;">
   <div class="accordion">
     <div class="accordion-item">
-      <div class="accordion-header">Sekce 1</div>
+      <div class="accordion-header">Jaké jsou podmínky pro zapůjčení vozu?</div>
       <div class="accordion-content">
-        <p>Obsah první sekce. Tady můžeš mít libovolný text nebo HTML.</p>
+        <p id="pindex">Osoba která si od nás půjčuje vůz musí mít řidičský
+           průkaz skupiny B a předložit doklad totožnosti. 
+        </p>
+        <p id="pindex">
+          V 
+           případě zapůjčení vozu na firmu potřebuje aby byl 
+           předložen výpis z obchodního rejstříku, nebo živnostenský list.
+        </p>
+        <p  id="pindex">
+          Pokud si od nás půjčíte vůz, tak předpokládáme že 
+          bude vrácen ve stejném stavu jako ve kterém byl zapůjčen,
+          a to včetně množství paliva, se kterým byl vůz předán.
+        </p>
+        <p id="pindex">
+          Vozidla jsou zapůjčena s limitem nájezdu kilometrů. Pokud by 
+          byl limit překročen, bude účtována částka navíc podle ceníku 
+          jednotlivých dodávek.
+        </p>
+        <p id="pindex">
+          <strong>Všeobecné obchodní podmínky</strong> jsou dostupné ke stažení kliknutím <a href="dokumenty/Všeobecné obchodní podmínky pro pronájem dopravních prostředků společnosti Votastav building s.pdf" download="Všeobecné obchodní podmínky pro pronájem dopravních prostředků společnosti Votastav building sro" id="links">zde</a>
+        </p>
       </div>
     </div>
 
     <div class="accordion-item">
-      <div class="accordion-header">Sekce 2</div>
+      <div class="accordion-header">Kde můžete dodávku vyzvednout?</div>
       <div class="accordion-content">
-        <p>Obsah druhé sekce. Klidně i obrázky nebo formulář.</p>
+        <p id="pindex">Vůz si můžete vyzvednout na parkovišti poblíž adresy Skautská 62, 708 00 Ostrava 8</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d643.5061612252649!2d18.177013269687613!3d49.823201998217435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDnCsDQ5JzIzLjUiTiAxOMKwMTAnMzkuNiJF!5e0!3m2!1scs!2scz!4v1741895644035!5m2!1scs!2scz" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
     <div class="accordion-item">
-      <div class="accordion-header">Sekce 3</div>
+      <div class="accordion-header">Kdy si můžete vůz vyzvednout?</div>
       <div class="accordion-content">
-        <p>Obsah třetí sekce. Všechno, co chceš.</p>
+        <p id="pindex">Vůz si lze vyzvednout ve dnech Po-Pa, od 7-18 hodin.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">Může se v naších vozech kouřit?</div>
+      <div class="accordion-content">
+        <p id="pindex">Všechny naše vozy jsou nekuřácké.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">Lze si nechat vůz dovézt a pak zase odvézt?</div>
+      <div class="accordion-content">
+        <p id="pinex">Dohodou se dá zařídit dovoz a odvoz vozu z předem domluveného místa.</p>
       </div>
     </div>
   </div>
+</div>
+
 
   <script>
     const headers = document.querySelectorAll('.accordion-header');
