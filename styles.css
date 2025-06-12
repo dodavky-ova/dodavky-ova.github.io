@@ -86,11 +86,11 @@ h2{
 #buttondown{
     text-align: left;
     font-weight: bold;
-    background-color: #0cc0df;
-    color: black;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
     border-style: solid;
     border-width: 2px;
-    border-color: #414141;
+    border-color: #ffffff;
     border-radius: 8px;
     font-size: 25px;
     padding: 10px 30px 10px 30px;
@@ -100,7 +100,7 @@ h2{
 
 }
 #buttondown:hover{
-    background-color: #11a0c4;
+    color: #0cc0df;
 }
 
 #button1:hover{
