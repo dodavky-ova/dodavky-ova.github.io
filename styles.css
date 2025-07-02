@@ -334,40 +334,21 @@ footer {
     color: #fff;
     font-size: 20px;
     border-style: solid;
-    border-width: 0px 0px 2px 0px;
+    border-width: 0 0 2px 0;
     border-color: #414141;
-    color: white;
-
-
-
   }
   
-  #navbarlogo{
+  #navbarlogo {
     height: 50px;
-    width: auto;
-    margin: 0px;
-    padding-bottom: 17px;
-    padding-right: 0px;
-    padding-left: 2px;
-    padding-top: 10px;
-    background-color: #0cc0df;
+    padding: 10px 0 17px 2px;
     margin-right: 15px;
-  }
-
-
-  .navbar img{
-    height: 50px;
-    width: auto;
-    display: flex;
+    background-color: #0cc0df;
   }
 
   .logo-container {
     display: flex;
     align-items: center;
-}
-
-
-  
+  }
 
   .nav-links {
     list-style: none;
@@ -375,19 +356,36 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .nav-links li {
     margin-right: 20px;
     padding-right: 15px;
   }
-  
+
   .nav-links a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s;
   }
 
-  .nav-links a:hover{
+  .nav-links a:hover {
     color: #0cc0df;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding-right: 20px;
+  }
+
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
   }
   
   .hamburger {
@@ -400,7 +398,7 @@ footer {
     width: 25px;
     height: 3px;
     background-color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
 
   .carousel {
@@ -660,57 +658,70 @@ footer {
   }
 
   @media screen and (max-width: 700px){
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 4rem;
-        left: 0;
-        width: 100%;
-        background-color: #414141;
-       
-      }
-    
-      .nav-links li {
-        margin-right: 0;
-      }
-    
-      .nav-links a {
-        padding: 10px;
-        display: block;
-      }
-    
-      .hamburger {
-        display: block;
-        padding-right: 20px;
-        margin-bottom: -5px;
-      }
-    
-      .show-nav-links {
-        display: flex;
-        margin-top: 32px;
-        margin-left: -35px;
-
-      }
-      .navbar img{
-        height: 40px;
-        width: auto;
-      }
-
-      #navbarlogo{
-        height: 40px;
-        width: auto;
-        margin: 0px;
-        padding-bottom: 17px;
-        padding-left: 6px;
-        padding-right: 2px;
-        padding-top: 10px;
-        margin-right: 15px;
+    .navbar{
+        position: relative;
+        z-index: 1;
     }
+    
+    .nav-links {
+      flex-direction: column;
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      width: 100%;
+      background-color: #414141;
+        margin-top: 0px;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      padding: 0;
+      gap: 0;
+
+      transition:
+        max-height 0.4s ease-in-out,
+        opacity 0.3s ease-in-out,
+        padding 0.3s ease-in-out,
+        gap 0.3s ease-in-out;
+    }
+
+    .nav-links li {
+      margin-right: 0;
+    }
+
+    .nav-links a {
+      padding: 10px;
+      display: block;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+    
+    .show-nav-links {
+        margin-top: 0px;
+        display: flex;
+    }
+
+    .navbar img{
+    height: 40px;
+    width: auto;
+    }
+
+    #navbarlogo{
+    height: 40px;
+    width: auto;
+    margin: 0px;
+    padding-bottom: 17px;
+    padding-left: 6px;
+    padding-right: 2px;
+    padding-top: 10px;
+    margin-right: 15px;
+    }
+
     .mycontainer table{
         width: 100%;
     }
+
     iframe{
         width: 100%;
     }
@@ -729,8 +740,29 @@ footer {
         margin-right: 7%;
     }
 
-    
+    .nav-links.show-nav-links {
+      max-height: 500px;
+      opacity: 1;
+      padding: 10px 0;
+      gap: 8px;
+      margin-left: 0px;
+    }
+
+    /* Animace hamburgeru na křížek */
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
   }
+    
+  
 
   
 
