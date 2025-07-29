@@ -4,11 +4,10 @@ html {
 
 body {
     background-color: #141414;
-
     background-size: cover;
+    font-family: "Goldman", sans-serif;
     margin: 0;
     padding: 0;
-    font-family: "Goldman", sans-serif;
     font-weight: 500;
     font-style: normal;
     display: flex;
@@ -337,6 +336,16 @@ footer {
     border-width: 0 0 2px 0;
     border-color: #414141;
   }
+
+  #mainlogocontainer{
+    justify-content: center;
+    display: flex;
+  }
+
+  #mainlogocontainer img{
+    height: auto;
+    width: 300px;
+  }
   
   #navbarlogo {
     height: 50px;
@@ -658,6 +667,11 @@ footer {
   }
 
   @media screen and (max-width: 700px){
+    #mainlogocontainer img{
+    height: auto;
+    width: 200px;
+  }
+    
     .navbar{
         position: relative;
         z-index: 1;
@@ -669,7 +683,7 @@ footer {
       top: 4rem;
       left: 0;
       width: 100%;
-      background-color: #414141;
+      background-color: #414141F5;
       margin-top: 5px;
       max-height: 0;
       opacity: 0;
