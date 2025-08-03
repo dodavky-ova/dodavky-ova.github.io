@@ -773,10 +773,9 @@ iframe{
   @media screen and (max-width: 600px) {
     
     #indexphoneimg{
-        width: 0px;
+        width: 150px;
         height: auto;
         padding: 0px;
-        margin-top: -15px;
     }
     
 
