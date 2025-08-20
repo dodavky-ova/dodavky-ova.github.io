@@ -1,4 +1,4 @@
-html {
+šhtml {
     scroll-behavior: smooth;
   }
 
@@ -110,9 +110,10 @@ h2{
 .mycontainer img{
     border-radius: 8px;
     width: auto; /* Nastavení šířky na 100% pro flexibilitu */
-    max-width: 450px; /* Nebo pevně nastav velikost */
+    max-width: 900px; /* Nebo pevně nastav velikost */
     max-height: 280px;
-    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     grid-column: 1;
     grid-row: 1;
     grid-column: 2;
@@ -290,6 +291,7 @@ iframe{
     height: 500px;
     display: block; 
     margin: 0 auto;
+    margin-bottom: 20px;
 }      
    
 
@@ -597,18 +599,7 @@ iframe{
     }
 
    
-    .mycontainer img{
-        border-radius: 8px;
-        width: auto; /* Nastavení šířky na 100% pro flexibilitu */
-        max-width: 300px; /* Nebo pevně nastav velikost */
-        max-height: 280px;
-        margin: 5px;
-        grid-column: 1;
-        grid-row: 1;
-        margin: auto;
-        margin-top: 10px;
-
-    }
+ 
 
     .mycontainer table{
         margin-left: auto;
@@ -826,18 +817,6 @@ iframe{
         text-align: left;
     }
 
-    .mycontainer img{
-        border-radius: 8px;
-        width: 80%; /* Nastavení šířky na 100% pro flexibilitu */
-        max-width: 450px; /* Nebo pevně nastav velikost */
-        max-height: 280px;
-        margin: 5px;
-        grid-column: 1;
-        grid-row: 1;
-        margin: 10px 10px 10px 10px;
-        grid-column: 1;
-
-    }
 
     
     .mycontainer li{
@@ -851,7 +830,7 @@ iframe{
     }
 
     .mycontainer button{
-        width: 95.5%;
+ 
         text-align: center;
         align-self: center;
         margin-left: 2.25%;
