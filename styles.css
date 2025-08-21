@@ -26,7 +26,7 @@ h2{
     font-size: 35;
     color: white; 
     margin-bottom: 0px;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 
@@ -128,7 +128,7 @@ h2{
 
 .mycontainer h2{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
     color: white;
     font-size: 30px;
 }
@@ -207,7 +207,7 @@ h2{
 .mycontainer table{
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     font-size: 22px;
     text-align: center;
     width: 900px;
@@ -218,15 +218,12 @@ h2{
     color: #ffffff;
     background-color: transparent;
     padding-top: 5px;
-    padding-bottom: 5px;
-
     padding-left: 30px;
     padding-right: 30px;
     font-size: 25px;
     transition: 0.5s;
     outline: none;
-    border: solid;
-    border-color: black;
+    border: none;
     border-width: 2px;
     border-radius: 15px;
     grid-template-columns: 1fr 300px;
@@ -234,7 +231,7 @@ h2{
 }
 
 .mycontainer button:hover{
-    background-color: #2aaecf;
+    background-color: #49494945;
 }
 
 
@@ -485,7 +482,7 @@ iframe{
 
 .fullscreen-btn {
     position: absolute;
-    bottom: 10px; /* Umístění pod obrázek */
+    bottom: 40px; /* Umístění pod obrázek */
     left: 50%;
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.5);
@@ -604,7 +601,7 @@ iframe{
     .mycontainer table{
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         font-size: 22px;
         text-align: center;
     }
@@ -784,6 +781,10 @@ iframe{
 
     h2{
         font-size: 25px;
+    }
+
+    .mycontainer h2{
+        margin-top: 20px;
     }
 
     .mycontainer table{
