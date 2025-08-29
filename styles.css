@@ -1,11 +1,11 @@
-šhtml {
+html {
     scroll-behavior: smooth;
   }
 
 body {
     background-color: #141414;
     background-size: cover;
-    font-family: "Goldman", sans-serif;
+    font-family: 'libre-franklin', 'sans-serif';
     margin: 0;
     padding: 0;
     font-weight: 500;
@@ -20,6 +20,7 @@ body {
 h1{
     font-size: 60px;
     color: white;
+    font-family: 'goldman', 'sans-serif';
 }
 
 h2{
@@ -27,6 +28,7 @@ h2{
     color: white; 
     margin-bottom: 0px;
     margin-top: 90px;
+    font-family: 'goldman', 'sans-serif';
 }
 
 
@@ -140,6 +142,7 @@ h2{
     margin-top: 0px;
     color: white;
     font-size: 30px;
+    font-family: 'goldman', 'sans-serif';
 }
 
 .mycontainer div{
@@ -299,6 +302,7 @@ iframe{
     color: #fff;
     font-size: 20px;
     text-align: center;
+    font-family: 'goldman', 'sans-serif';
 }
 
 .phonebar img{
@@ -312,6 +316,10 @@ iframe{
 
 .phonebar a:link{
     color:#000000;
+}
+
+.phonebar a{
+    color: #000000;
 }
 
 #phonebarsplit{
@@ -332,6 +340,7 @@ iframe{
     border-style: solid;
     border-width: 0 0 2px 0;
     border-color: #414141;
+    font-family: 'goldman', 'sans-serif';
   }
 
   #mainlogocontainer{
