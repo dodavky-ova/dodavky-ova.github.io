@@ -74,3 +74,8 @@ const nextBtn = document.getElementById("nextBtn");
     fullscreenBtn.addEventListener("click", toggleFullscreen);
   }
 });
+
+
+
+
+
