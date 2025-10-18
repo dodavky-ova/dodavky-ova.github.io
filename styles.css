@@ -3,7 +3,7 @@ html {
   }
 
 body {
-    background-color: #141414;
+    background-color: #1a1a1a;
     background-size: cover;
     font-family: Arial, sans-serif;  
     margin: 0;
@@ -57,6 +57,7 @@ h2{
     border-width: 2px;
     border-color: #414141;
     color: white;
+    background-color:  rgb(12, 12, 12);
     justify-content: center; 
     align-items: center;   
     margin: 0 auto; 
@@ -78,7 +79,7 @@ h2{
     text-align: left;
     font-weight: bold;
     background-color: #0cc0df;
-    color: black;
+    color:  rgb(12, 12, 12);
     border-style: solid;
     border-width: 2px;
     border-color: #414141;
@@ -88,14 +89,12 @@ h2{
 #buttondown{
     text-align: left;
     font-weight: bold;
-    background-color: black;
-    color: rgb(255, 255, 255);
-    border-style: solid;
-    border-width: 2px;
-    border-color: #414141;
+    background-color: #0cc0df;
+    color: rgb(12, 12, 12);
+    border-style: none;
     border-radius: 8px;
     font-size: 25px;
-    padding: 10px 30px 10px 20px;
+    padding: 10px 30px 10px 30px;
     margin-bottom: 30px;
     cursor: pointer;
     transition: 0.5s;
@@ -103,11 +102,11 @@ h2{
 
 }
 #buttondown:hover{
-    color: #0cc0df;
+    background-color: #51dcff;
 }
 
 #button1:hover{
-    background-color: #11a0c4;
+    background-color: #51dcff;
 }
 
 .mycontainer img{
@@ -157,9 +156,8 @@ h2{
     gap: 30px;
     font-size: 20px;
     border-radius: 10px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #414141;
+    border: none;
+    background-color: rgb(12, 12, 12);
     color: white;
     margin: 0 auto; 
     margin-top: 20px;
@@ -274,10 +272,11 @@ footer {
     right: 0;
     margin-top: auto;
     width: 100%;
-    background-color: #111111;
+    background-color:  rgb(12, 12, 12);
     padding: 0px;
     text-align: center;
 }
+
 
 footer p{
     color: white;
@@ -529,6 +528,8 @@ iframe{
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .accordion-item{
